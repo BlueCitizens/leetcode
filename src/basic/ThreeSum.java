@@ -14,6 +14,10 @@ import java.util.Set;
  * 
  *              例如：arr = [-3,-1,-2,1,2,3]，target = 0。输出为 [(-3,1,2),(-2,-1,3)]
  * 
+ *              https://blog.csdn.net/jiaobiandianliu/article/details/102470491
+ * 
+ *              https://blog.csdn.net/qq_38783664/article/details/122854012
+ * 
  * @date: 2024/2/2 11:15
  */
 public class ThreeSum {
@@ -21,7 +25,9 @@ public class ThreeSum {
 	// 暴力解法
 	public static Set<List<Integer>> ts(int[] arr, int target) {
 
+		// 利用set去重 注意list有顺序 {1,2,3}{2,1,3}是两个不同的序列
 		Set<List<Integer>> s = new HashSet<>();
+		// 提前排好序 方便凑和
 		Arrays.sort(arr);
 		System.out.println(Arrays.toString(arr));
 		for (int i = 0; i < arr.length - 2; i++) {
@@ -82,9 +88,12 @@ public class ThreeSum {
 		 */
 		int[] arr = { -1, -2, -3, 4, 5, -4, 3 };
 		System.out.println(ts1(arr, 2));
-		int l = 0, r = 5;
+
 		/*
+		 * int l = 0, r = 5;
+		 * 
 		 * while (l < r && l < --r) { System.out.println(r); } System.out.println(r);
 		 */
+
 	}
 }

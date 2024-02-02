@@ -13,6 +13,8 @@ import java.util.List;
  *              动态规划，排列组合
  * 
  *              https://segmentfault.com/a/1190000040142137
+ *              
+ *              https://blog.csdn.net/qq_41662115/article/details/104503310
  * 
  * @date: 2024/1/31 16:56
  */
