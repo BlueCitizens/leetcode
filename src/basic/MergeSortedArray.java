@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class MergeSortedArray {
 
 	// 逆向双指针
-	public static int[] msd(int[] arr1, int[] arr2) {
+	public static int[] msa(int[] arr1, int[] arr2) {
 		
 		int[] arr = new int[arr1.length + arr2.length];
 		int p1 = arr1.length - 1, p2 = arr2.length - 1;
@@ -45,6 +45,6 @@ public class MergeSortedArray {
 	public static void main(String[] args) {
 		int[] arr1 = { 1, 3, 4, 5 };
 		int[] arr2 = { -2, 3, 5, 7 };
-		System.out.println(Arrays.toString(msd(arr1, arr2)));
+		System.out.println(Arrays.toString(msa(arr1, arr2)));
 	}
 }
